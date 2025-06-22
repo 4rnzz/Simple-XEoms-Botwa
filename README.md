@@ -1,22 +1,60 @@
-# laurine-wabot (simple selfbot)
 
-<p align="left">
-  <img src="https://github.com/kiuur.png" width="250"/>
-</p>
+# 🤖 Simple-XEoms-Botwa
 
-this project has 3 main features:
+Simple-XEoms-Botwa adalah proyek bot WhatsApp yang dibuat dengan fokus pada kesederhanaan, modularitas, dan kemudahan pengembangan.
 
-1. support buttonsMessage and interactiveMessage on WhatsApp business and original WhatsApp  
-2. reactsw automatically and can be true or false  
-3. light and online 24 hours non-stop  
-4. still using node18  
-5. support cases and plugins  
-6. command only responds to bots  
-7. there is no 100% encryption  
-8. simple code, only for self bot  
+## ✨ Fitur Utama
 
-**attention, and need to be read:**  
-1. this script does not contain malware, backdoors or anything that is detrimental to its users  
-2. open source, you are prohibited from selling it, but if it has many features (from you) it is your right  
-3. when this script is misused, I (KyuuRzy) am not responsible for any losses, because this script is open source, safe and clean from disturbing its users  
-4. free for all, no restrictions
+- 📦 Struktur modular (folder `lib`, `plugins`, dll)
+- ⚙️ Konfigurasi mudah melalui folder `settings`
+- 🔌 Sistem plugin yang fleksibel
+- 🔄 Auto-reload saat ada perubahan
+- 💬 Respon cepat dan ringan
+
+## 📁 Struktur Folder
+
+```bash
+.
+├── lib/            # Fungsi atau utilitas utama
+├── plugins/        # Kumpulan plugin fitur
+├── settings/       # Konfigurasi bot
+├── tmp/            # Data sementara
+├── XEoms.js        # File utama eksekusi
+├── index.js        # Entry point
+└── package.json    # Dependensi dan metadata
+```
+
+## 🚀 Cara Menjalankan
+
+1. Clone repo:
+
+```bash
+git clone https://github.com/4rnzz/Simple-XEoms-Botwa.git
+cd Simple-XEoms-Botwa
+```
+
+2. Install dependensi:
+
+```bash
+npm install
+```
+
+3. Jalankan bot:
+
+```bash
+node index.js
+```
+
+## 🛠 Dibuat Dengan
+
+- Node.js
+- JavaScript ES6
+- Konsep Modular
+
+## 📜 Lisensi
+
+MIT License — silakan gunakan, modifikasi, dan bagikan!
+
+---
+
+> Dibuat dengan ❤️ oleh [4rnzz](https://github.com/4rnzz)
