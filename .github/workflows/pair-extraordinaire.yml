@@ -1,7 +1,7 @@
 name: Commit with Co-Author
 
 on:
-  workflow_dispatch:  # Bisa dijalankan manual dari GitHub UI
+  workflow_dispatch:  
 
 jobs:
   commit:
@@ -24,11 +24,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
+          echo "Tes kolaborasi dengan xlanzz\n\nCo-authored-by: xlanzz <sikyubooyah@gmail.com>" > commit-msg.txt
           git add kolaborasi.txt
-          git commit -m "$(cat <<EOF
-Tes kolaborasi dengan xlanzz
-
-Co-authored-by: xlanzz <sikyubooyah@gmail.com>
-EOF
-)"
+          git commit -F commit-msg.txt
           git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }} HEAD:main
