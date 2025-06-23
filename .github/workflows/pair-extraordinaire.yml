@@ -25,7 +25,10 @@ jobs:
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
           git add kolaborasi.txt
-          git commit -m "Tes kolaborasi dengan xlanzz
+          git commit -m "$(cat <<EOF
+Tes kolaborasi dengan xlanzz
 
-Co-authored-by: xlanzz <sikyubooyah@gmail.com>"
+Co-authored-by: xlanzz <sikyubooyah@gmail.com>
+EOF
+)"
           git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }} HEAD:main
