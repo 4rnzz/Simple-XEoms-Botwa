@@ -1,0 +1,31 @@
+name: Commit with Co-Author
+
+on:
+  workflow_dispatch:  # Bisa dijalankan manual dari GitHub UI
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Git identity
+        run: |
+          git config user.name "4rnzz"
+          git config user.email "sellrnzz@gmail.com"
+
+      - name: Buat perubahan dummy (contoh)
+        run: |
+          echo "Kolaborasi dengan xlanzz pada $(date)" >> kolaborasi.txt
+
+      - name: Commit dengan co-author (xlanzz)
+        env:
+          TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: |
+          git add kolaborasi.txt
+          git commit -m "Tes kolaborasi dengan xlanzz
+
+Co-authored-by: xlanzz <sikyubooyah@gmail.com>"
+          git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }} HEAD:main
