@@ -177,7 +177,7 @@ command:
  ▢ ${prefix}eval`
                 await client.sendMessage(m.chat, {
                     productMessage: {
-                        title: "🪽 — ( XEoms-cn: exploration )",
+                        title: "🪽 — ( XEoms-ch: exploration )",
                         description: config.settings.description,
                         thumbnail: config.thumbUrl,
                         productId: "123456789",
