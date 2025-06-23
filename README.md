@@ -1,5 +1,5 @@
 
-# 🤖 Simple-XEoms-Botwa
+# Simple-XEoms-Botwa
 
 Simple-XEoms-Botwa adalah proyek bot WhatsApp yang dibuat dengan fokus pada kesederhanaan, modularitas, dan kemudahan pengembangan.
 
